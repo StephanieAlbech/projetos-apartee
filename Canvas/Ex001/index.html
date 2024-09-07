@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+       
+    </style>
+    <title>Canvas</title>
+</head>
+<body>
+    <canvas id="nome" width="400px" height="400px">Seu navegador não supota o Canvas do HTML5, procure atualiza-lo.</canvas>
+
+<script>
+    var canvas = document.getElementById('nome');
+    var context = canvas.getContext('2d');
+
+    context.fillStyle = 'red';
+    context.fillRect(50, 50, 100, 100);
+    
+    context.lineWidth = 3;
+    context.strokeStyle = 'blue';
+    context.strokeRect(50, 50, 100, 100);
+
+    context.beginPath();
+
+    context.moveTo(75, 250);
+    context.lineTo(150, 50);
+    context.lineTo(225, 250);
+    context.lineTo(50, 120);
+    context.lineTo(250, 120);
+    context.lineTo(75, 250);
+    context.lineWidth = 2;
+    context.strokeStyle = "blue";
+
+
+
+    context.stroke();
+
+    context.beginPath();
+
+    context.fillStyle= 'gray';
+    context.strokeStyle= 'black';
+    context.lineWidth= 2;
+    
+    context.arc (
+        50,
+        50,
+        40,
+        90*Math.PI/180,
+        270*Math.PI/180,
+        false
+    );
+
+    context.fill()
+    context.stroke()
+
+        
+</script>
+</body>
+</html>
