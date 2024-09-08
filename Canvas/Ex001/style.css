@@ -1,0 +1,273 @@
+@charset "UTF-8";
+
+/*mobile first*/
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    background-color: rgb(255, 134, 154);
+    height: 100px;
+    color: white;
+    text-align: center;
+    box-shadow: 2px 2px 6px 2px rgba(70, 0, 23, 0.192);
+}
+menu{
+    display: none;
+    position: relative;
+}
+header > h1 {
+    padding-top: 20px ;
+  
+}
+
+ul{
+    background-color: rgb(255, 173, 187);
+    padding: 10px;
+    border-radius: 5px;
+    
+
+}
+
+ul > a {
+    text-decoration: none;
+    list-style: none;
+    color: white;
+
+}
+
+a > li {
+    padding: 3px;
+    font-weight: bolder;
+}
+
+a > li:hover{
+    color: rgb(177, 0, 29);
+    transition: 0.5s;
+}
+
+
+article > div > img {
+    width: 200px;
+    display: block;
+    padding-bottom: 20px;
+   
+    
+
+
+}
+article > div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 10px;
+    box-shadow: -4px 2px 15px 5px rgba(0, 0, 0, 0.212);
+    text-align: center;
+    
+}
+
+div > p#preço{
+    background-color: pink;
+    border-radius: 5px;
+
+}
+
+div > p {
+    padding: 3px;
+
+}
+
+
+a > input {
+    width: 200px;
+    height: 40px;
+    cursor: pointer;
+    
+
+}
+a > input:hover{
+    background-color: pink;
+    transition: 0.5s;
+}
+#burger{
+    padding-top: 15px;
+    cursor: pointer;
+    display: block;
+}
+
+#perg{
+    background-color: pink;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    display: none;
+    
+    
+
+   
+}
+#perg > input{
+    padding: 5px;
+    border-radius: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#perg > p {
+    padding: 10px;
+}
+
+    
+
+#perg2{
+    background-color: pink;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    display: none;
+    
+
+   
+}
+#perg2 > p {
+    padding: 10px;
+}
+#perg2 > input{
+    padding: 5px;
+    border-radius: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+#respn{
+    background-color: pink;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    display: none;
+    
+
+   
+}
+#respn > p {
+    padding: 10px;
+}
+
+#sim2{
+    background-color: pink;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    display: none;
+    
+
+   
+}
+
+#sim2 > a > input{
+    border-radius: 50px;
+    margin: 15px;
+}
+#sim2 > a > input:hover{
+    background-color: rgb(252, 136, 155);
+}
+
+
+
+
+
+
+div#simm{
+    background-color: pink;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    display: block;
+    width: 400px;
+    height: 200px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 0.5px;
+    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.384);
+    display: none;
+}    
+
+   
+    
+    
+#simm > input{
+    width: 100px;
+    height: 50px;
+    padding: 5px;
+    border-radius: 50px;
+    margin-top: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-weight: bolder;
+}
+
+#simm > input:hover{
+    background-color: rgb(255, 103, 128);
+    transition: 0.5s;
+}
+
+div#prec{
+    display: none;
+    background-color: pink;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    width: 400px;
+    height: 200px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 0.5px;
+    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.384);
+    display: none;
+
+}
+div#simm > a > input{
+    width: 100px;
+    height: 50px;
+    padding: 5px;
+    border-radius: 50px;
+    margin-top: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-weight: bolder;
+}
+
+main > h2{
+    
+    text-align: center;
+    margin: 20px;
+    
+}
+
+p {
+    background-color: pink;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 10px;
+    
+}
+
+input#botao{
+    width: 300px;
+    height: 50px;   
+    display: block;
+    
+}
+
+
+
+

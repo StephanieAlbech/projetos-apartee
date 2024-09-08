@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+   
+</head>
+<body>
+    <header>
+        <h1>SEJA BEM-VINDO</h1>  
+        <span id="burger" class="material-symbols-outlined" onclick="clickmenu()"> menu </span>
+        <menu id="menuzinho">
+          
+                
+                </span>
+            <ul >
+                <a href="#">
+                    <li>Loja</li>
+                </a>
+                <a href="#">
+                    <li>Sobre nós</li>
+                </a>
+                <a href="#">
+                    <li>Meios de contato</li>
+                </a>
+                
+            </ul>
+        </menu>
+    </header>
+    <main>
+
+        <h2>Por favor, confirme suas informações de compra.</h2>
+
+        <p>Preço do item: <b>100.000$</b></p>
+        <p>Desconto: <b>100%</b></p>
+        <p>Valor final: <b>0$</b></p>
+        <p>Motivo do desconto: A desenvolvedora tem um penhasco pelo comprador, é completamente apaixonada por cada detalhezinho, cada fio de cabelo e cada palavra, ela gostaria de lembrar que te ama muito, literalmente infinitamente.</p>
+
+        <p>Você está comprando <strong>amor</strong>, realmente precisa disso? se sim prossiga a compra.</p>
+
+        <input id="botao" type="button" value="Comprar" onclick="comprar()">
+
+        <div id="simm">
+            <h2>Você precisa mesmo de amor?</h2>
+            <p>A desenvolvedora acha que talvez você já tenha..</p>
+            <input type="button" value="Sim" onclick="hell()">
+
+            <a href="pag3.html"><input type="button" value="Não"></a>
+        </div>
+
+        <div id="prec"> 
+            <h2>A desenvolvedora entende</h2>
+            <iframe src="https://giphy.com/embed/3og0IG0skAiznZQLde" width="400" height="190" style="" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/sad-cry-capoo-3og0IG0skAiznZQLde" ></p>
+        
+
+        </div>
+
+    </main>
+
+    <script>
+        function clickmenu(){
+            const menuzinho = document.getElementById('menuzinho');
+            if(menuzinho.style.display == 'none'){
+                menuzinho.style.display= 'block'
+        }
+            else{
+                menuzinho.style.display= 'none'
+        }
+        }
+
+        function comprar(){
+            hideAll()
+            const simm = document.getElementById('simm');
+                if(simm.style.display == 'none'){
+                    simm.style.display = 'block'
+                    
+                }
+            
+            else{
+                simm.style.display = 'none'
+            }
+        }
+
+        function hell(){
+            hideAll()
+            const prec = document.getElementById('prec');
+
+            if(prec.style.display == 'none'){
+                prec.style.display = 'block'
+            }
+            else{
+                prec.style.display = 'none'
+            }
+        }
+
+        function hideAll(){
+            document.getElementById('simm').style.display = 'none';
+            document.getElementById('prec').style.display = 'none'}
+
+        
+    </script>
+</body>
+</html>

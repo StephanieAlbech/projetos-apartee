@@ -3,59 +3,152 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-       
-    </style>
-    <title>Canvas</title>
+    <title>Loja</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
-    <canvas id="nome" width="400px" height="400px">Seu navegador não supota o Canvas do HTML5, procure atualiza-lo.</canvas>
+    <header>
+        <h1>SEJA BEM-VINDO</h1>  
+        <span id="burger" class="material-symbols-outlined" onclick="clickmenu()"> menu </span>
+        <menu id="menuzinho">
+          
+                
+                </span>
+            <ul >
+                <a href="#">
+                    <li>Loja</li>
+                </a>
+                <a href="#">
+                    <li>Sobre nós</li>
+                </a>
+                <a href="#">
+                    <li>Meios de contato</li>
+                </a>
+                
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <div>
+                <img src="../Ex001/imagens/coracao-png-9.webp" alt="Amor">
+                <p>Amor</p>
 
-<script>
-    var canvas = document.getElementById('nome');
-    var context = canvas.getContext('2d');
+                <p id="preço">Valor: 100.000$</p>
 
-    context.fillStyle = 'red';
-    context.fillRect(50, 50, 100, 100);
-    
-    context.lineWidth = 3;
-    context.strokeStyle = 'blue';
-    context.strokeRect(50, 50, 100, 100);
+               <a href="#"><input type="button" value="Comprar" onclick="but()"></a>
 
-    context.beginPath();
+            </div> 
 
-    context.moveTo(75, 250);
-    context.lineTo(150, 50);
-    context.lineTo(225, 250);
-    context.lineTo(50, 120);
-    context.lineTo(250, 120);
-    context.lineTo(75, 250);
-    context.lineWidth = 2;
-    context.strokeStyle = "blue";
+            <div id="perg">
+                <h2>Pequeno questionario..</h2>
+                <p>Seu nome é William?</p>
 
+                <input type="button" value="Sim" onclick="sim()">
 
+                <input type="button" value="Não" onclick="nao()">
+            </div>
 
-    context.stroke();
+            <div id="respn">
+               <h2>Compra negada</h2>
+               <p>Desculpe, você não tem os requisitos necesários para essa compra.</p>
+            </div>
 
-    context.beginPath();
+            <div id="perg2">
+                <h2>SIM?</h2>
+                <p>William Magalhães dos Santos?</p>
+                
+                <input type="button" value="Sim" onclick="sim2()">
+                <input id="" type="button" value="Não" onclick="nao2()">
 
-    context.fillStyle= 'gray';
-    context.strokeStyle= 'black';
-    context.lineWidth= 2;
-    
-    context.arc (
-        50,
-        50,
-        40,
-        90*Math.PI/180,
-        270*Math.PI/180,
-        false
-    );
+            </div>
 
-    context.fill()
-    context.stroke()
+            <div id="sim2">
+                <h2>Parabéns</h2>
+                <p>Você acaba de ganhar um desconto na compra,se quiser continuar clique aqui:</p>
+                <a href="pag2.html"><input type="button" value="Comprar"></a>
+            </div>
+        </article>
 
+    </main>
+    <script>
+        function clickmenu(){
+            const menuzinho = document.getElementById('menuzinho');
+            if(menuzinho.style.display == 'none'){
+                menuzinho.style.display= 'block'
+        }
+            else{
+                menuzinho.style.display= 'none'
+        }
+        }
+        function but(){
+            hideAll()
+            const perg = document.getElementById('perg');
+           if(perg.style.display == 'none'){
+            perg.style.display = 'block'
+           }
+           else{
+            perg.style.display= 'none'
+           }
+            
+        }
+
+        function sim(){
+            hideAll()
+            const perg2 = document.getElementById('perg2');
+            if(perg2.style.display== 'none'){
+                perg2.style.display = 'block'
+            }
+            else{
+                perg2.style.display = 'none'
+            }
+            
+        }
+
+        function nao(){
+            hideAll()
+            const respn = document.getElementById('respn')
+            if(respn.style.display == 'none'){
+                respn.style.display = 'block'
+            }
+            else{
+                respn.style.display='none'
+            }
+
+        }
+
+        function sim2(){
+            const sim2 = document.getElementById('sim2')
+            if (sim2.style.display == 'none'){
+                sim2.style.display = 'block'
+            }
+            else{
+                sim2.style.display = 'none'
+            }
+        }
+
+        function nao2(){
+            hideAll()
+            const nao2 = document.getElementById('nao2')
+            if(respn.style.display == 'none'){
+                respn.style.display = 'block'
+            }
+            else{
+                respn.style.display='none'
+            }
+
+        }
+      
+
+        function hideAll(){
+            document.getElementById('perg').style.display = 'none';
+            document.getElementById('perg2').style.display = 'none';
+            document.getElementById('respn').style.display = 'none';
+
+        }
         
-</script>
+    
+    </script>
 </body>
 </html>
